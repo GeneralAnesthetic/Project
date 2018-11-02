@@ -25,11 +25,12 @@ app.use(express.urlencoded({ extended: true }));
 // // parse application/json
 app.use(express.json());
 
-if (process.env.NODE.ENV === "production") {
+if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
 app.use("/api", routes);
+
 const PORT = process.env.PORT || 4040;
 // Start our server so that it can begin listening to client requests.
 app.listen(PORT, function() {
