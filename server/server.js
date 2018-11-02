@@ -1,5 +1,6 @@
 var express = require("express");
 var mongoose = require("mongoose");
+require("dotenv").config();
 // JSON WEB TOKENS NPM: Issuer(iss)Validation, Expirations(exp),.sign()
 // var jsonwebtokens = require("jsonwebtokens");
 var routes = require("./routes");
@@ -8,7 +9,9 @@ var routes = require("./routes");
 
 // (node:9444) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
 mongoose.connect(
-  "mongodb://localhost:27017/snippets",
+  process.env.MONGODB_URI || "mongodb://localhost/snippets",
+  // mongoose.connect(
+  //   "mongodb://localhost:27017/snippets",
   err => {
     if (err) console.log("Failed to connect to the database", err);
   }
