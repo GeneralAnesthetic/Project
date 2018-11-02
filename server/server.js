@@ -25,9 +25,9 @@ app.use(express.urlencoded({ extended: true }));
 // // parse application/json
 app.use(express.json());
 
-// if (process.env.NODE.ENV === "production") {
-//   app.use(express.static("client/build"));
-// }
+if (process.env.NODE.ENV === "production") {
+  app.use(express.static("client/build"));
+}
 
 app.use("/api", routes);
 const PORT = process.env.PORT || 4040;
