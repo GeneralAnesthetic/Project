@@ -1,0 +1,9 @@
+.display-wrapper {
+  display: flex;
+}
+.editor-wrapper {
+  flex: 1;
+}
+.htmlParser-wrapper {
+  flex: 1;
+}

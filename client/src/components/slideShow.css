@@ -1,0 +1,28 @@
+.container {
+  width: 95%;
+  /* margin-right: 1%;
+  margin-left: 1%; */
+  height: 12em;
+  background: repeating-radial-gradient(lightcyan, darkslategray 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: aquamarine; */
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  border-style: inset;
+  border-width: 0% 5% 0% 5%;
+  border-color: aquamarine;
+  align-content: center;
+  padding-left: 25%;
+}
+button {
+  border: lightcyan;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-style: inset;
+  border-width: 0.001%;
+  border-color: lightsteelblue;
+  display: inline;
+  margin: 0.5%;
+}

@@ -1,0 +1,38 @@
+.wrap {
+  height: 100em;
+  width: 98%;
+  background: repeating-radial-gradient(whitesmoke, aquamarine 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: lightblue;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-style: inset;
+  border-width: 0.001%;
+  border-color: gray;
+}
+h3 {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  min-width: 55%;
+  max-width: 55%;
+  text-decoration: underline overline;
+  padding-left: 20%;
+}
+nav {
+  display: flex;
+  /* flex: 6; */
+  flex-flow: row-reverse wrap;
+  min-width: 25%;
+  max-width: 25%;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 50%;
+  text-decoration: underline lightslategray;
+}
